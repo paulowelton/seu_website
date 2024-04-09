@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    list-style-type: none;
+    border: 0;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --corPrincipal: #121520;
+}
+header{
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5); */
+    background: rgb(9,13,19);
+    background: linear-gradient(90deg, rgba(9,13,19,1) 0%, rgba(12,16,43,1) 28%, rgba(10,25,99,1) 73%);
+    color: rgb(216, 213, 213);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+header .logo{
+    width: 140px;
+    height: 100px;
+    cursor: pointer;
+}
+header ul{
+    display: flex;
+    width: 60%;
+    justify-content: space-evenly;
+    font-weight: bold;
+    cursor: pointer;
+    align-items: center;
+}
+header ul li:hover{
+    color: white;
+}
+#precos{
+    border: none;
+    font-weight: bold;
+    color: white;
+    background-color: var(--corPrincipal);
+    border-radius: 20px;
+    width: 100px;
+    height: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+#precos:hover{
+    background-color: black;
+}
+
+body{
+    /* background-color: var(--corPrincipal); */
+    background: rgb(9,13,19);
+    background: linear-gradient(90deg, rgba(9,13,19,1) 0%, rgba(12,16,43,1) 28%, rgba(10,25,99,1) 73%);
+}
+
+.apresentacao{
+    text-align: center;
+    color: white;
+    margin: 150px 0px 0px;
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+}
+.apresentacao .imagem-apresentacao img{
+    width: 500px;   
+}
+.apresentacao .infor-apresentacao{
+    width: 45%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.apresentacao .infor-apresentacao p{
+    margin: 30px 0px 0px;
+    font-size: 15px;
+    color: rgb(216, 213, 213);
+}
+.apresentacao .infor-apresentacao button{
+    text-decoration: none;
+    margin: 30px 0px 0px;
+    width: 150px;
+    height: 40px;
+    background-color: #121520;
+    color: white;
+    border: none;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.servicos{
+    background-color:  var(--corPrincipal);
+    margin: 130px 0px 0px;
+    display: flex;
+    text-align: center;
+    color: white;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.servicos h1{
+    margin: 70px 0px 0px;
+}
+.servicos .desc{
+    margin: 30px 0px 0px;
+    width: 750px;
+    color: rgb(216, 213, 213);
+    font-size: 15px;
+}
+.servicos .produtos{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    margin: 50px 0px 0px;
+}
+.servicos label{
+    font-weight: bold;
+    font-size: 20px;
+}
+.servicos p{
+    width: 60%;
+    margin: 50px 0px 0px;
+    font-size: 13px;
+}
+.p1,.p2,.p3{
+    width: 25%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 15px 0px 0px;
+}
+
+.quem-somos{
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+.quem-somos h1{
+    margin: 50px 0px 0px;
+}
+.quem-somos p{
+    width: 60%;
+    display: flex;
+    align-items: center;
+}
+.quem-somos .bio{
+    margin: 30px 0px 0px;
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+.quem-somos .bio img{
+    width: 300px;
+}
+
+footer{
+    margin: 50px 0px 0px;
+    padding: 50px 0px 20px;
+    background-color: #121520;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+}
+footer h1{
+    margin: 0px 0px 20px;
+}
+footer img{
+    cursor: pointer;
+}
+
+/* menu */
+#menu{
+    display: none;
+    font-size: 35px;
+}
+.menu{
+    background-color: #121520;
+    position: fixed;
+    width: 65%;
+    height: 100vh;
+    color: white;
+    padding: 10px;
+    display: none;
+}
+.menu .topo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu .topo .sair{
+    font-size: 25px;
+    font-weight: bold;
+}
+.menu .informacoes-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 0px 0px;
+}
+.menu .informacoes-menu p,button{
+    margin: 35px 0px 0px;
+}
+.menu .informacoes-menu button{
+    width: 120px;
+    font-weight: bold;
+    color: white;
+    background-color: black;
+    border-radius: 20px;
+    height: 40px;
+}
+
+/* sweet */
+#tit{
+    font-weight: bold;
+}
+#desc{
+    margin: 20px 0px 0px;
+    font-size: 15px;
+}
+#wpp{
+    display: flex;
+    align-items: center;
+    background-color: rgb(72, 221, 72);
+    border-radius: 20px;
+    width:200px;
+    color: white;
+    font-weight: bold;
+    justify-content: center;
+    margin: 10px;
+    padding: 5px;
+    cursor: pointer;
+}
+#wpp img{
+    width: 30px;
+}
+#cont-wpp{
+    margin: 20px 0px 0px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* phone layout */
+@media screen and (max-width: 767px) {
+    #menu{
+        display: block;
+    }
+    header ul{
+        display: none;
+    }
+
+    .apresentacao .imagem-apresentacao{
+        display: none;
+    }
+    .apresentacao .infor-apresentacao{
+        width: 90%;
+    }
+    
+    .servicos .desc{
+        width: 100%;
+    }
+    .servicos .produtos{
+        flex-direction: column;
+    }
+    .servicos p{
+        width: 100%;
+    }
+    .p1,.p2,.p3{
+        width: 80%;
+        height: 300px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .quem-somos{
+        flex-direction: column;
+    }
+    .quem-somos .bio{
+        flex-direction: column;
+        align-items: center;
+    }
+    .quem-somos p{
+        width: 90%;
+        text-align: center;
+    }
+}

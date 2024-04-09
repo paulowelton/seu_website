@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seu web site</title>
+    <link rel="stylesheet" href="assets/style.css">
+    <script src="assets/script.js" defer></script>
+    <link  rel="icon" type="image/png" href="imagens/log_sws.png">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <section class="menu">
+        <div class="topo">
+            <h1>Menu</h1>
+            <p class="sair">&#8594;</p>
+        </div>
+        <div class="informacoes-menu">
+            <p onclick="redirect('index.html')">Inicio</p>
+            <p onclick="redirect('#qs')">Quem somos</p>
+            <p onclick="redirect('#servico')">Serviços</p>
+            <p id="contato">Contato</p>
+            <button id="precos-menu">Preços</button>
+        </div>
+    </section>
+    <header>
+        <img onclick="redirect('index.html')" src="imagens/log_sws.png" class="logo" alt="">
+        <ul>
+            <li onclick="redirect('index.html')">Início</li>
+            <li onclick="redirect('#qs')">Quem somos</li>
+            <li onclick="redirect('#servico')">Serviços</li>
+            <li id="contato">Contato</li>
+            <li><button id="precos">Preços</button></li>
+        </ul>
+            <p id="menu">&#9776;</p>
+    </header>
+    <main>
+        <section class="apresentacao">
+            <div class="imagem-apresentacao">
+                <img src="imagens/vetor.png" alt="">
+            </div>
+            <div class="infor-apresentacao">
+                <h1>Sites Sob Medida Transforme Sua Visão em Realidade Online!</h1>
+                <p>Descubra a melhor maneira de apresentar sua marca ao mundo. Nossa equipe de especialistas em design está pronta para criar um site personalizado que transmita a essência do seu negócio de forma única e envolvente. Vamos transformar suas ideias em uma presença online poderosa e memorável.</p>
+                <div>
+                    <button onclick="redirect('#servico')">Saiba mais</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="servico" class="servicos">
+            <h1>Conheça nosso Serviços</h1>
+            <p class="desc">Oferecemos serviços de criação de sites sob medida para atender às suas necessidades exclusivas. Combinando design elegante, funcionalidade intuitiva e expertise técnica, estamos prontos para transformar sua visão em uma presença online marcante e eficaz.</p>
+            <div class="produtos">
+                <div class="p1">
+                    <label>criação de sites</label>
+                    <p>
+                        Oferecemos serviços de criação de sites que combinam design criativo e funcionalidade intuitiva. Nossa equipe trabalha para criar uma presença online que não apenas impressiona visualmente, mas também impulsiona o envolvimento do usuário e os resultados do seu negócio.
+                    </p>
+                </div>
+                <div class="p2">
+                    <label>Designs personalizados</label>
+                    <p>
+                        Nossa especialidade está na criação de designs personalizados que refletem a singularidade de cada cliente. Combinando criatividade e expertise técnica, nossos serviços de criação de sites garantem uma presença online única e memorável para o seu negócio. Desde o conceito inicial até a implementação final, nossa equipe está dedicada a transformar sua visão em realidade digital.
+                    </p>
+                </div>
+                <div class="p3">
+                    <label>Suporte e manutenção de sites</label>
+                    <p>
+                        Garanta que seu site permaneça atualizado e funcional com nosso serviço de manutenção. De correções de bugs a atualizações de conteúdo, cuidamos de tudo para você, para que você possa se concentrar no que é importante: seu negócio.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section id="qs" class="quem-somos">
+            <h1>Nos conheça melhor</h1>
+            <div class="bio">
+                <img src="imagens/log_sws.png" alt="">
+                <p>Somos uma equipe apaixonada por transformar suas ideias em presença online. Oferecemos soluções personalizadas para construir sites poderosos e memoráveis. Nosso compromisso é com a excelência, qualidade e satisfação do cliente. Seja para criar um novo site ou atualizar sua presença online, estamos aqui para ajudar você a alcançar seus objetivos digitais.</p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <h1>Nos siga no Instagram</h1>
+        <img onclick="redirect('https://www.instagram.com/seu_website/')" src="imagens/icons8-instagram-48.png" alt="">
+        <p>© Seu website. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
